@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "5757095F-CC41-4507-B4B8-4960ADE5C931",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CorePlot.xcodeproj",
+        "identifier" : "0730F5FF109492D800E95162",
+        "name" : "UnitTests Mac"
+      }
+    }
+  ],
+  "version" : 1
+}
