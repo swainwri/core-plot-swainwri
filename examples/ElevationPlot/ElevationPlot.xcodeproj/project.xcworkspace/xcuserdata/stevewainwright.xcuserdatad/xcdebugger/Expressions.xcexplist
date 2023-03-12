@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "pointInCGPath:CPTContourPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot checkForIntersectingContoursAndCreateNewBorderContours:contours:plane:]:CPTContourPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot drawSwatchForLegend:atIndex:inRect:inContext:]:CPTContourPlot.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage*)[theSwatchFill debugQuickLookObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTPlot reloadDataInIndexRange:]:CPTPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot calculateFill:combinedPath:collectedPlanes:]:CPTContourPlot.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage*)[theFill debugQuickLookObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTFieldFunctionDataSource plotBoundsChanged]:CPTFieldFunctionDataSource.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot findClosedDataLinePaths:noFoundClosedDataLinePaths:OuterCGPath:context:contours:plane:leftEdge:bottomEdge:rightEdge:topEdge:ascendingOrder:useExtraLineStripList:fromCurrentPlane:checkPointOnPath:]:CPTContourPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CGPathImage dealloc]:CGPathImage.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pixelData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.searchForLimits():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTListContour exportLineForIsoCurve:FromX1:FromY1:ToX2:ToY2:]:_CPTListContour.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pStripList-&gt;array[pos]">
+            </PersistentString>
+            <PersistentString
+               value = "stripLists.array[iPlane]-&gt;array[pos]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.plotSpace(_:shouldHandlePointingDeviceDownEvent:at:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CPTAlignPointToUserSpace:CPTUtilities.m">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.setupContoursDataSource(plot:minX:maxX:minY:maxY:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.toggleSurfaceInterpolationContoursMethodButton(_:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot pathsDiscontinuityRegions:context:contours:discontinuityStrips:leftEdge:bottomEdge:rightEdge:topEdge:]:CPTContourPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContours intersectionsWithAnotherList:Other:Tolerance:]:_CPTContours.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "testIndex + x + y * columnMutliplier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot drawFillBetweenBorderIsoCurves:contours:borderStrips:borderIndices:usedExtraLineStripLists:leftEdge:bottomEdge:rightEdge:topEdge:outerBoundaryLimitsCGPaths:noOuterBoundaryLimitsCGPaths:]:CPTContourPlot.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(int)borderIndex">
+            </PersistentString>
+            <PersistentString
+               value = "(UIImage*)[theFill debugQuickLookObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot findFillFromBoundingPlanes:noCollectedPlanes:]:CPTContourPlot.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage*)[theFill debugQuickLookObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot findClosedDataLinePaths:noFoundClosedDataLinePaths:foundClosedPlanes:OuterCGPath:context:contours:plane:leftEdge:bottomEdge:rightEdge:topEdge:ascendingOrder:useExtraLineStripList:fromCurrentPlane:checkPointOnPath:]:CPTContourPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot calculateFill:combinedPath:collectedPlanes:noCollectedPlanes:]:CPTContourPlot.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage*)[theFill debugQuickLookObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot drawFillBetweenClosedIsoCurves:contours:usedExtraLineStripLists:leftEdge:bottomEdge:rightEdge:topEdge:]:CPTContourPlot.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage*)[theFill debugQuickLookObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.fill(for:isoCurve:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidAppear(_:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage*)[explanationLayer debugQuickLookObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTListContour compactStrips]:_CPTListContour.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
