@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "kdtree",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Bersaelor/KDTree",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4ab987f872778a807d9f8385bd0fed79f2222d4b"
+      }
+    },
+    {
+      "identity" : "swiftspinner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/icanzilb/SwiftSpinner",
+      "state" : {
+        "revision" : "f6cfeb6f1780571bdef8bdaf924ccdb573d23e33",
+        "version" : "2.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

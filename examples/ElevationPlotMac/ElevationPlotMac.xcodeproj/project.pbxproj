@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E35A4A7829B183A2002FB814 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35A4A7729B183A2002FB814 /* Info.plist */; };
+		E37383D329778BC5003D0A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37383D229778BC5003D0A5B /* AppDelegate.swift */; };
+		E37383D529778BC5003D0A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37383D429778BC5003D0A5B /* ViewController.swift */; };
+		E37383D729778BCD003D0A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37383D629778BCD003D0A5B /* Assets.xcassets */; };
+		E37383DA29778BCD003D0A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37383D829778BCD003D0A5B /* Main.storyboard */; };
+		E37383E529778BCD003D0A5B /* ElevationPlotMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37383E429778BCD003D0A5B /* ElevationPlotMacTests.swift */; };
+		E37383EF29778BCD003D0A5B /* ElevationPlotMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37383EE29778BCD003D0A5B /* ElevationPlotMacUITests.swift */; };
+		E37383F129778BCD003D0A5B /* ElevationPlotMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37383F029778BCD003D0A5B /* ElevationPlotMacUITestsLaunchTests.swift */; };
+		E373840229778C48003D0A5B /* KDTree in Frameworks */ = {isa = PBXBuildFile; productRef = E373840129778C48003D0A5B /* KDTree */; };
+		E373840C29778DF4003D0A5B /* info_file1 in Resources */ = {isa = PBXBuildFile; fileRef = E373840429778DF3003D0A5B /* info_file1 */; };
+		E373840D29778DF4003D0A5B /* info_file2 in Resources */ = {isa = PBXBuildFile; fileRef = E373840529778DF3003D0A5B /* info_file2 */; };
+		E373840E29778DF4003D0A5B /* data3 in Resources */ = {isa = PBXBuildFile; fileRef = E373840629778DF3003D0A5B /* data3 */; };
+		E373840F29778DF4003D0A5B /* TrainingData22 in Resources */ = {isa = PBXBuildFile; fileRef = E373840729778DF3003D0A5B /* TrainingData22 */; };
+		E373841029778DF4003D0A5B /* info_file3 in Resources */ = {isa = PBXBuildFile; fileRef = E373840829778DF3003D0A5B /* info_file3 */; };
+		E373841129778DF4003D0A5B /* TrainingData21 in Resources */ = {isa = PBXBuildFile; fileRef = E373840929778DF3003D0A5B /* TrainingData21 */; };
+		E373841229778DF4003D0A5B /* TestingData2 in Resources */ = {isa = PBXBuildFile; fileRef = E373840A29778DF4003D0A5B /* TestingData2 */; };
+		E373841329778DF4003D0A5B /* data1 in Resources */ = {isa = PBXBuildFile; fileRef = E373840B29778DF4003D0A5B /* data1 */; };
+		E373842C29778E26003D0A5B /* PiNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373841529778E25003D0A5B /* PiNumberFormatter.swift */; };
+		E373843029778E26003D0A5B /* TriangleInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373841A29778E25003D0A5B /* TriangleInterpolation.swift */; };
+		E373843129778E26003D0A5B /* Circumcircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373841B29778E25003D0A5B /* Circumcircle.swift */; };
+		E373843229778E26003D0A5B /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373841C29778E25003D0A5B /* Edge.swift */; };
+		E373843329778E26003D0A5B /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373841D29778E25003D0A5B /* Point.swift */; };
+		E373843429778E26003D0A5B /* Delaunay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373841E29778E25003D0A5B /* Delaunay.swift */; };
+		E373843529778E26003D0A5B /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373841F29778E25003D0A5B /* Polygon.swift */; };
+		E373843629778E26003D0A5B /* PointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842029778E25003D0A5B /* PointNode.swift */; };
+		E373843729778E26003D0A5B /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842129778E25003D0A5B /* Triangle.swift */; };
+		E373843829778E26003D0A5B /* Kriging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842329778E26003D0A5B /* Kriging.swift */; };
+		E373843929778E26003D0A5B /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842529778E26003D0A5B /* Format.swift */; };
+		E373843A29778E26003D0A5B /* HullHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842629778E26003D0A5B /* HullHelper.swift */; };
+		E373843B29778E26003D0A5B /* Intersect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842729778E26003D0A5B /* Intersect.swift */; };
+		E373843C29778E26003D0A5B /* Convex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842829778E26003D0A5B /* Convex.swift */; };
+		E373843D29778E26003D0A5B /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842929778E26003D0A5B /* Grid.swift */; };
+		E373843E29778E26003D0A5B /* Hull.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373842A29778E26003D0A5B /* Hull.swift */; };
+		E373846E2977B211003D0A5B /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37384512977936B003D0A5B /* CorePlot.framework */; };
+		E373846F2977B211003D0A5B /* CorePlot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E37384512977936B003D0A5B /* CorePlot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3C08AB929B197A50020032C /* ElevationPlotMac.help in Resources */ = {isa = PBXBuildFile; fileRef = E35A4A7529B18230002FB814 /* ElevationPlotMac.help */; };
+		E3CC60CF297A435A0024792D /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CC60CE297A435A0024792D /* SpinnerView.swift */; };
+		E3FA57A4297E212D0034BE33 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA57A3297E212D0034BE33 /* WindowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E37383E129778BCD003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37383C729778BC4003D0A5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37383CE29778BC5003D0A5B;
+			remoteInfo = ElevationPlotMac;
+		};
+		E37383EB29778BCD003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37383C729778BC4003D0A5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E37383CE29778BC5003D0A5B;
+			remoteInfo = ElevationPlotMac;
+		};
+		E37384502977936B003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37384402977936B003D0A5B /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = "CorePlot Mac";
+		};
+		E37384522977936B003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37384402977936B003D0A5B /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = "UnitTests Mac";
+		};
+		E37384542977936B003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37384402977936B003D0A5B /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09781A46185200D45436;
+			remoteInfo = "CorePlot iOS";
+		};
+		E37384562977936B003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37384402977936B003D0A5B /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09821A46185300D45436;
+			remoteInfo = "UnitTests iOS";
+		};
+		E37384582977936B003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37384402977936B003D0A5B /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6921BC83F2A0091C8F7;
+			remoteInfo = "CorePlot tvOS";
+		};
+		E373845A2977936B003D0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E37384402977936B003D0A5B /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6B71BC83F2D0091C8F7;
+			remoteInfo = "UnitTests tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E37384702977B211003D0A5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E373846F2977B211003D0A5B /* CorePlot.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E35A4A7529B18230002FB814 /* ElevationPlotMac.help */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ElevationPlotMac.help; path = ElevationPlotMac/ElevationPlotMac.help; sourceTree = "<group>"; };
+		E35A4A7729B183A2002FB814 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37383CF29778BC5003D0A5B /* ElevationPlotMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElevationPlotMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37383D229778BC5003D0A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E37383D429778BC5003D0A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E37383D629778BCD003D0A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E37383D929778BCD003D0A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E37383DB29778BCD003D0A5B /* ElevationPlotMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElevationPlotMac.entitlements; sourceTree = "<group>"; };
+		E37383E029778BCD003D0A5B /* ElevationPlotMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevationPlotMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37383E429778BCD003D0A5B /* ElevationPlotMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationPlotMacTests.swift; sourceTree = "<group>"; };
+		E37383EA29778BCD003D0A5B /* ElevationPlotMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElevationPlotMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37383EE29778BCD003D0A5B /* ElevationPlotMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationPlotMacUITests.swift; sourceTree = "<group>"; };
+		E37383F029778BCD003D0A5B /* ElevationPlotMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationPlotMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E373840429778DF3003D0A5B /* info_file1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info_file1; sourceTree = "<group>"; };
+		E373840529778DF3003D0A5B /* info_file2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info_file2; sourceTree = "<group>"; };
+		E373840629778DF3003D0A5B /* data3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data3; sourceTree = "<group>"; };
+		E373840729778DF3003D0A5B /* TrainingData22 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrainingData22; sourceTree = "<group>"; };
+		E373840829778DF3003D0A5B /* info_file3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info_file3; sourceTree = "<group>"; };
+		E373840929778DF3003D0A5B /* TrainingData21 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrainingData21; sourceTree = "<group>"; };
+		E373840A29778DF4003D0A5B /* TestingData2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestingData2; sourceTree = "<group>"; };
+		E373840B29778DF4003D0A5B /* data1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data1; sourceTree = "<group>"; };
+		E373841529778E25003D0A5B /* PiNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiNumberFormatter.swift; sourceTree = "<group>"; };
+		E373841A29778E25003D0A5B /* TriangleInterpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleInterpolation.swift; sourceTree = "<group>"; };
+		E373841B29778E25003D0A5B /* Circumcircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circumcircle.swift; sourceTree = "<group>"; };
+		E373841C29778E25003D0A5B /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		E373841D29778E25003D0A5B /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		E373841E29778E25003D0A5B /* Delaunay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delaunay.swift; sourceTree = "<group>"; };
+		E373841F29778E25003D0A5B /* Polygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		E373842029778E25003D0A5B /* PointNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointNode.swift; sourceTree = "<group>"; };
+		E373842129778E25003D0A5B /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		E373842329778E26003D0A5B /* Kriging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kriging.swift; sourceTree = "<group>"; };
+		E373842529778E26003D0A5B /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		E373842629778E26003D0A5B /* HullHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HullHelper.swift; sourceTree = "<group>"; };
+		E373842729778E26003D0A5B /* Intersect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intersect.swift; sourceTree = "<group>"; };
+		E373842829778E26003D0A5B /* Convex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convex.swift; sourceTree = "<group>"; };
+		E373842929778E26003D0A5B /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		E373842A29778E26003D0A5B /* Hull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hull.swift; sourceTree = "<group>"; };
+		E37384402977936B003D0A5B /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = "../../../core-plot-swainwri/framework/CorePlot.xcodeproj"; sourceTree = "<group>"; };
+		E3CC60CE297A435A0024792D /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		E3FA57A3297E212D0034BE33 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E37383CC29778BC5003D0A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E373846E2977B211003D0A5B /* CorePlot.framework in Frameworks */,
+				E373840229778C48003D0A5B /* KDTree in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37383DD29778BCD003D0A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37383E729778BCD003D0A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E37383C629778BC4003D0A5B = {
+			isa = PBXGroup;
+			children = (
+				E35A4A7529B18230002FB814 /* ElevationPlotMac.help */,
+				E37384402977936B003D0A5B /* CorePlot.xcodeproj */,
+				E37383D129778BC5003D0A5B /* ElevationPlotMac */,
+				E37383E329778BCD003D0A5B /* ElevationPlotMacTests */,
+				E37383ED29778BCD003D0A5B /* ElevationPlotMacUITests */,
+				E37383D029778BC5003D0A5B /* Products */,
+				E373845F2977AC77003D0A5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E37383D029778BC5003D0A5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E37383CF29778BC5003D0A5B /* ElevationPlotMac.app */,
+				E37383E029778BCD003D0A5B /* ElevationPlotMacTests.xctest */,
+				E37383EA29778BCD003D0A5B /* ElevationPlotMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E37383D129778BC5003D0A5B /* ElevationPlotMac */ = {
+			isa = PBXGroup;
+			children = (
+				E35A4A7729B183A2002FB814 /* Info.plist */,
+				E37383D229778BC5003D0A5B /* AppDelegate.swift */,
+				E37383D629778BCD003D0A5B /* Assets.xcassets */,
+				E373842429778E26003D0A5B /* ConcaveHull */,
+				E37383DB29778BCD003D0A5B /* ElevationPlotMac.entitlements */,
+				E373842229778E26003D0A5B /* Kriging */,
+				E37383D829778BCD003D0A5B /* Main.storyboard */,
+				E373841529778E25003D0A5B /* PiNumberFormatter.swift */,
+				E373840329778DCA003D0A5B /* Resources */,
+				E3CC60CE297A435A0024792D /* SpinnerView.swift */,
+				E373841729778E25003D0A5B /* Triangulation */,
+				E37383D429778BC5003D0A5B /* ViewController.swift */,
+				E3FA57A3297E212D0034BE33 /* WindowController.swift */,
+			);
+			path = ElevationPlotMac;
+			sourceTree = "<group>";
+		};
+		E37383E329778BCD003D0A5B /* ElevationPlotMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				E37383E429778BCD003D0A5B /* ElevationPlotMacTests.swift */,
+			);
+			path = ElevationPlotMacTests;
+			sourceTree = "<group>";
+		};
+		E37383ED29778BCD003D0A5B /* ElevationPlotMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E37383EE29778BCD003D0A5B /* ElevationPlotMacUITests.swift */,
+				E37383F029778BCD003D0A5B /* ElevationPlotMacUITestsLaunchTests.swift */,
+			);
+			path = ElevationPlotMacUITests;
+			sourceTree = "<group>";
+		};
+		E373840329778DCA003D0A5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E373840B29778DF4003D0A5B /* data1 */,
+				E373840629778DF3003D0A5B /* data3 */,
+				E373840429778DF3003D0A5B /* info_file1 */,
+				E373840529778DF3003D0A5B /* info_file2 */,
+				E373840829778DF3003D0A5B /* info_file3 */,
+				E373840A29778DF4003D0A5B /* TestingData2 */,
+				E373840929778DF3003D0A5B /* TrainingData21 */,
+				E373840729778DF3003D0A5B /* TrainingData22 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E373841729778E25003D0A5B /* Triangulation */ = {
+			isa = PBXGroup;
+			children = (
+				E373841A29778E25003D0A5B /* TriangleInterpolation.swift */,
+				E373841B29778E25003D0A5B /* Circumcircle.swift */,
+				E373841C29778E25003D0A5B /* Edge.swift */,
+				E373841D29778E25003D0A5B /* Point.swift */,
+				E373841E29778E25003D0A5B /* Delaunay.swift */,
+				E373841F29778E25003D0A5B /* Polygon.swift */,
+				E373842029778E25003D0A5B /* PointNode.swift */,
+				E373842129778E25003D0A5B /* Triangle.swift */,
+			);
+			path = Triangulation;
+			sourceTree = "<group>";
+		};
+		E373842229778E26003D0A5B /* Kriging */ = {
+			isa = PBXGroup;
+			children = (
+				E373842329778E26003D0A5B /* Kriging.swift */,
+			);
+			path = Kriging;
+			sourceTree = "<group>";
+		};
+		E373842429778E26003D0A5B /* ConcaveHull */ = {
+			isa = PBXGroup;
+			children = (
+				E373842529778E26003D0A5B /* Format.swift */,
+				E373842629778E26003D0A5B /* HullHelper.swift */,
+				E373842729778E26003D0A5B /* Intersect.swift */,
+				E373842829778E26003D0A5B /* Convex.swift */,
+				E373842929778E26003D0A5B /* Grid.swift */,
+				E373842A29778E26003D0A5B /* Hull.swift */,
+			);
+			path = ConcaveHull;
+			sourceTree = "<group>";
+		};
+		E37384412977936B003D0A5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E37384512977936B003D0A5B /* CorePlot.framework */,
+				E37384532977936B003D0A5B /* UnitTests.xctest */,
+				E37384552977936B003D0A5B /* CorePlot.framework */,
+				E37384572977936B003D0A5B /* UnitTests iOS.xctest */,
+				E37384592977936B003D0A5B /* CorePlot.framework */,
+				E373845B2977936B003D0A5B /* UnitTests tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E373845F2977AC77003D0A5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E37383CE29778BC5003D0A5B /* ElevationPlotMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E37383F429778BCD003D0A5B /* Build configuration list for PBXNativeTarget "ElevationPlotMac" */;
+			buildPhases = (
+				E37383CB29778BC5003D0A5B /* Sources */,
+				E37383CC29778BC5003D0A5B /* Frameworks */,
+				E37383CD29778BC5003D0A5B /* Resources */,
+				E37384702977B211003D0A5B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElevationPlotMac;
+			packageProductDependencies = (
+				E373840129778C48003D0A5B /* KDTree */,
+			);
+			productName = ElevationPlotMac;
+			productReference = E37383CF29778BC5003D0A5B /* ElevationPlotMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E37383DF29778BCD003D0A5B /* ElevationPlotMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E37383F729778BCD003D0A5B /* Build configuration list for PBXNativeTarget "ElevationPlotMacTests" */;
+			buildPhases = (
+				E37383DC29778BCD003D0A5B /* Sources */,
+				E37383DD29778BCD003D0A5B /* Frameworks */,
+				E37383DE29778BCD003D0A5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E37383E229778BCD003D0A5B /* PBXTargetDependency */,
+			);
+			name = ElevationPlotMacTests;
+			productName = ElevationPlotMacTests;
+			productReference = E37383E029778BCD003D0A5B /* ElevationPlotMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E37383E929778BCD003D0A5B /* ElevationPlotMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E37383FA29778BCD003D0A5B /* Build configuration list for PBXNativeTarget "ElevationPlotMacUITests" */;
+			buildPhases = (
+				E37383E629778BCD003D0A5B /* Sources */,
+				E37383E729778BCD003D0A5B /* Frameworks */,
+				E37383E829778BCD003D0A5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E37383EC29778BCD003D0A5B /* PBXTargetDependency */,
+			);
+			name = ElevationPlotMacUITests;
+			productName = ElevationPlotMacUITests;
+			productReference = E37383EA29778BCD003D0A5B /* ElevationPlotMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E37383C729778BC4003D0A5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E37383CE29778BC5003D0A5B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E37383DF29778BCD003D0A5B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E37383CE29778BC5003D0A5B;
+					};
+					E37383E929778BCD003D0A5B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E37383CE29778BC5003D0A5B;
+					};
+				};
+			};
+			buildConfigurationList = E37383CA29778BC4003D0A5B /* Build configuration list for PBXProject "ElevationPlotMac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E37383C629778BC4003D0A5B;
+			packageReferences = (
+				E373840029778C48003D0A5B /* XCRemoteSwiftPackageReference "KDTree" */,
+			);
+			productRefGroup = E37383D029778BC5003D0A5B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E37384412977936B003D0A5B /* Products */;
+					ProjectRef = E37384402977936B003D0A5B /* CorePlot.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E37383CE29778BC5003D0A5B /* ElevationPlotMac */,
+				E37383DF29778BCD003D0A5B /* ElevationPlotMacTests */,
+				E37383E929778BCD003D0A5B /* ElevationPlotMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E37384512977936B003D0A5B /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = E37384502977936B003D0A5B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E37384532977936B003D0A5B /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = E37384522977936B003D0A5B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E37384552977936B003D0A5B /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = E37384542977936B003D0A5B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E37384572977936B003D0A5B /* UnitTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests iOS.xctest";
+			remoteRef = E37384562977936B003D0A5B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E37384592977936B003D0A5B /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = E37384582977936B003D0A5B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E373845B2977936B003D0A5B /* UnitTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests tvOS.xctest";
+			remoteRef = E373845A2977936B003D0A5B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E37383CD29778BC5003D0A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C08AB929B197A50020032C /* ElevationPlotMac.help in Resources */,
+				E373840F29778DF4003D0A5B /* TrainingData22 in Resources */,
+				E373840E29778DF4003D0A5B /* data3 in Resources */,
+				E373840C29778DF4003D0A5B /* info_file1 in Resources */,
+				E37383D729778BCD003D0A5B /* Assets.xcassets in Resources */,
+				E373841329778DF4003D0A5B /* data1 in Resources */,
+				E373841029778DF4003D0A5B /* info_file3 in Resources */,
+				E37383DA29778BCD003D0A5B /* Main.storyboard in Resources */,
+				E35A4A7829B183A2002FB814 /* Info.plist in Resources */,
+				E373841229778DF4003D0A5B /* TestingData2 in Resources */,
+				E373840D29778DF4003D0A5B /* info_file2 in Resources */,
+				E373841129778DF4003D0A5B /* TrainingData21 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37383DE29778BCD003D0A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37383E829778BCD003D0A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E37383CB29778BC5003D0A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E373843629778E26003D0A5B /* PointNode.swift in Sources */,
+				E3FA57A4297E212D0034BE33 /* WindowController.swift in Sources */,
+				E373842C29778E26003D0A5B /* PiNumberFormatter.swift in Sources */,
+				E373843C29778E26003D0A5B /* Convex.swift in Sources */,
+				E373843829778E26003D0A5B /* Kriging.swift in Sources */,
+				E373843D29778E26003D0A5B /* Grid.swift in Sources */,
+				E37383D529778BC5003D0A5B /* ViewController.swift in Sources */,
+				E373843529778E26003D0A5B /* Polygon.swift in Sources */,
+				E373843E29778E26003D0A5B /* Hull.swift in Sources */,
+				E373843029778E26003D0A5B /* TriangleInterpolation.swift in Sources */,
+				E3CC60CF297A435A0024792D /* SpinnerView.swift in Sources */,
+				E373843129778E26003D0A5B /* Circumcircle.swift in Sources */,
+				E373843329778E26003D0A5B /* Point.swift in Sources */,
+				E373843429778E26003D0A5B /* Delaunay.swift in Sources */,
+				E373843929778E26003D0A5B /* Format.swift in Sources */,
+				E373843A29778E26003D0A5B /* HullHelper.swift in Sources */,
+				E373843729778E26003D0A5B /* Triangle.swift in Sources */,
+				E373843B29778E26003D0A5B /* Intersect.swift in Sources */,
+				E373843229778E26003D0A5B /* Edge.swift in Sources */,
+				E37383D329778BC5003D0A5B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37383DC29778BCD003D0A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37383E529778BCD003D0A5B /* ElevationPlotMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E37383E629778BCD003D0A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37383EF29778BCD003D0A5B /* ElevationPlotMacUITests.swift in Sources */,
+				E37383F129778BCD003D0A5B /* ElevationPlotMacUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E37383E229778BCD003D0A5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E37383CE29778BC5003D0A5B /* ElevationPlotMac */;
+			targetProxy = E37383E129778BCD003D0A5B /* PBXContainerItemProxy */;
+		};
+		E37383EC29778BCD003D0A5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E37383CE29778BC5003D0A5B /* ElevationPlotMac */;
+			targetProxy = E37383EB29778BCD003D0A5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E37383D829778BCD003D0A5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E37383D929778BCD003D0A5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E37383F229778BCD003D0A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E37383F329778BCD003D0A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E37383F529778BCD003D0A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ElevationPlotMac/ElevationPlotMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGMRL5A68M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElevationPlotMac/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whichtoolface.ElevationPlotMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E37383F629778BCD003D0A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ElevationPlotMac/ElevationPlotMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGMRL5A68M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElevationPlotMac/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whichtoolface.ElevationPlotMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E37383F829778BCD003D0A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGMRL5A68M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whichtoolface.ElevationPlotMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevationPlotMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ElevationPlotMac";
+			};
+			name = Debug;
+		};
+		E37383F929778BCD003D0A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGMRL5A68M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whichtoolface.ElevationPlotMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevationPlotMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ElevationPlotMac";
+			};
+			name = Release;
+		};
+		E37383FB29778BCD003D0A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGMRL5A68M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whichtoolface.ElevationPlotMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ElevationPlotMac;
+			};
+			name = Debug;
+		};
+		E37383FC29778BCD003D0A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGMRL5A68M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whichtoolface.ElevationPlotMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ElevationPlotMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E37383CA29778BC4003D0A5B /* Build configuration list for PBXProject "ElevationPlotMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37383F229778BCD003D0A5B /* Debug */,
+				E37383F329778BCD003D0A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E37383F429778BCD003D0A5B /* Build configuration list for PBXNativeTarget "ElevationPlotMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37383F529778BCD003D0A5B /* Debug */,
+				E37383F629778BCD003D0A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E37383F729778BCD003D0A5B /* Build configuration list for PBXNativeTarget "ElevationPlotMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37383F829778BCD003D0A5B /* Debug */,
+				E37383F929778BCD003D0A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E37383FA29778BCD003D0A5B /* Build configuration list for PBXNativeTarget "ElevationPlotMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E37383FB29778BCD003D0A5B /* Debug */,
+				E37383FC29778BCD003D0A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E373840029778C48003D0A5B /* XCRemoteSwiftPackageReference "KDTree" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bersaelor/KDTree";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E373840129778C48003D0A5B /* KDTree */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E373840029778C48003D0A5B /* XCRemoteSwiftPackageReference "KDTree" */;
+			productName = KDTree;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E37383C729778BC4003D0A5B /* Project object */;
+}

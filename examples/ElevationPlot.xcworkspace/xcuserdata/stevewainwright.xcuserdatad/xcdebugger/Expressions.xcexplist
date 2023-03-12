@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.plotSpace(_:shouldHandlePointingDeviceDownEvent:at:):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot drawFillBetweenClosedIsoCurves:contours:usedExtraLineStripLists:leftEdge:bottomEdge:rightEdge:topEdge:]:CPTContourPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot pathsDiscontinuityRegions:context:contours:discontinuityStrips:leftEdge:bottomEdge:rightEdge:topEdge:]:CPTContourPlot.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CPTContourPlot findClosedDataLinePaths:noFoundClosedDataLinePaths:foundClosedPlanes:OuterCGPath:context:contours:plane:leftEdge:bottomEdge:rightEdge:topEdge:ascendingOrder:useExtraLineStripList:fromCurrentPlane:checkPointOnPath:]:CPTContourPlot.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[NSBezierPath bezierPathWithCGPath:foundDataLinePath]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
