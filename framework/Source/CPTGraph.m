@@ -1566,28 +1566,31 @@ CPTGraphPlotSpaceKey const CPTGraphPlotSpaceNotificationKey       = @"CPTGraphPl
             if ( [(NSString*)[(NSDictionary*)[pointerRegion identifier] objectForKey:@"annotation"] isEqualToString:@"CPTLayerAnnotation"] ) {
                 theHoverAnnotation.contentLayer.position = adjustedPosition;
             }
-            CGFloat contentAnchorPointX = 0.5, contentAnchorPointY = 0.5;
+//            CGFloat contentAnchorPointX = 0.5, contentAnchorPointY = 0.5;
             CGFloat displacementX = 0.0, displacementY = 0.0;
             if ( theHoverAnnotation.contentLayer.frame.origin.x + adjustedPosition.x < self.frame.origin.x ) {
-                contentAnchorPointX = 1;
-                displacementX = 20;
+//                contentAnchorPointX = 1;
+                displacementX = theHoverAnnotation.contentLayer.frame.size.width / 2;
             }
             else if ( theHoverAnnotation.contentLayer.frame.origin.x + adjustedPosition.x + theHoverAnnotation.contentLayer.frame.size.width > self.frame.origin.x + self.frame.size.width ) {
-                contentAnchorPointX = 0;
-                displacementX = -20;
+//                contentAnchorPointX = 0;
+                displacementX = -theHoverAnnotation.contentLayer.frame.size.width / 2;
             }
             if ( theHoverAnnotation.contentLayer.frame.origin.y + adjustedPosition.y < self.frame.origin.y ) {
-                contentAnchorPointY = 1;
-                displacementY = 20;
+//                contentAnchorPointY = 1;
+                displacementY = theHoverAnnotation.contentLayer.frame.size.height / 2;
             }
             else if ( theHoverAnnotation.contentLayer.frame.origin.y + adjustedPosition.y + theHoverAnnotation.contentLayer.frame.size.height > self.frame.origin.y + self.frame.size.height ) {
-                contentAnchorPointY = 0;
-                displacementY = -20;
+//                contentAnchorPointY = 0;
+                displacementY = -theHoverAnnotation.contentLayer.frame.size.height / 2;
             }
-            theHoverAnnotation.contentAnchorPoint = CGPointMake(contentAnchorPointX, contentAnchorPointY);
-            if ( [(NSString*)[(NSDictionary*)[pointerRegion identifier] objectForKey:@"annotation"] isEqualToString:@"CPTLayerAnnotation"] ) {
+//            theHoverAnnotation.contentAnchorPoint = CGPointMake(contentAnchorPointX, contentAnchorPointY);
+            theHoverAnnotation.contentAnchorPoint = CGPointMake(0.5, 0.5);
+//            if ( [(NSString*)[(NSDictionary*)[pointerRegion identifier] objectForKey:@"annotation"] isEqualToString:@"CPTLayerAnnotation"] ) {
                 theHoverAnnotation.displacement = CGPointMake(displacementX, displacementY);
-            }
+//            }
+           
+            [theHoverAnnotation positionContentLayer];
             
             [self addAnnotation:theHoverAnnotation];
         }
@@ -1717,26 +1720,27 @@ CPTGraphPlotSpaceKey const CPTGraphPlotSpaceNotificationKey       = @"CPTGraphPl
         }
         theHoverAnnotation.contentLayer = layer;
         theHoverAnnotation.contentLayer.position = CGPointMake(trackingArea.rect.origin.x + trackingArea.rect.size.width / 2, trackingArea.rect.origin.y + trackingArea.rect.size.height / 2);
-        CGFloat contentAnchorPointX = 0.5, contentAnchorPointY = 0.5;
+//        CGFloat contentAnchorPointX = 0.5, contentAnchorPointY = 0.5;
         CGFloat displacementX = 0.0, displacementY = 0.0;
         if ( theHoverAnnotation.contentLayer.frame.origin.x < self.frame.origin.x ) {
-            contentAnchorPointX = 1;
-            displacementX = -20;
+//            contentAnchorPointX = 1;
+            displacementX = theHoverAnnotation.contentLayer.frame.size.width / 2;
         }
         else if ( theHoverAnnotation.contentLayer.frame.origin.x + theHoverAnnotation.contentLayer.frame.size.width > self.frame.origin.x + self.frame.size.width ) {
-            contentAnchorPointX = 0;
-            displacementX = 20;
+//            contentAnchorPointX = 0;
+            displacementX = -theHoverAnnotation.contentLayer.frame.size.width / 2;
         }
         if ( theHoverAnnotation.contentLayer.frame.origin.y < self.frame.origin.y ) {
-            contentAnchorPointY = 1;
-            displacementY = -20;
+//            contentAnchorPointY = 1;
+            displacementY = theHoverAnnotation.contentLayer.frame.size.height / 2;
         }
         else if ( theHoverAnnotation.contentLayer.frame.origin.y + theHoverAnnotation.contentLayer.frame.size.height > self.frame.origin.y + self.frame.size.height ) {
-            contentAnchorPointY = 0;
-            displacementY = -20;
+//            contentAnchorPointY = 0;
+            displacementY = -theHoverAnnotation.contentLayer.frame.size.height / 2;
         }
-        theHoverAnnotation.contentAnchorPoint = CGPointMake(contentAnchorPointX, contentAnchorPointY);
+        theHoverAnnotation.contentAnchorPoint = CGPointMake(0.5, 0.5);
         theHoverAnnotation.displacement = CGPointMake(displacementX, displacementY);
+        [theHoverAnnotation positionContentLayer];
         
         [self addAnnotation:theHoverAnnotation];
     }

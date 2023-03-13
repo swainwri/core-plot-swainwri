@@ -2596,6 +2596,7 @@ CPTPlotBinding const CPTPlotBindingDataLabels = @"dataLabels"; ///< Plot data la
     if ( index != NSNotFound ) {
         CPTPlotSpace *thePlotSpace = nil;
         NSTrackingArea *trackingArea = [theHostingView.trackingAreas objectAtIndex:index];
+        CGPoint adjustedPosition = CGPointMake(trackingArea.rect.origin.x + trackingArea.rect.size.width / 2, trackingArea.rect.origin.y - trackingArea.rect.size.height / 2);
         if ( (thePlotSpace = (CPTPlotSpace*)[(NSDictionary*)[trackingArea userInfo] objectForKey:@"plotspace"]) ) {
             CPTNumberArray *plotPoint = [thePlotSpace plotPointForPlotAreaViewPoint:trackingArea.rect.origin];
             CPTPlotSpaceAnnotation *annotation =  [[CPTPlotSpaceAnnotation alloc] initWithPlotSpace:thePlotSpace anchorPlotPoint:plotPoint];
@@ -2629,27 +2630,30 @@ CPTPlotBinding const CPTPlotBindingDataLabels = @"dataLabels"; ///< Plot data la
         }
         theHoverAnnotation.contentLayer = layer;
         theHoverAnnotation.contentLayer.position = trackingArea.rect.origin;
-        CGFloat contentAnchorPointX = 0.5, contentAnchorPointY = 0.5;
+//        CGFloat contentAnchorPointX = 0.5, contentAnchorPointY = 0.5;
         CGFloat displacementX = 0.0, displacementY = 0.0;
-        if ( theHoverAnnotation.contentLayer.frame.origin.x < self.frame.origin.x ) {
-            contentAnchorPointX = 1;
-            displacementX = -20;
+        if ( theHoverAnnotation.contentLayer.frame.origin.x + adjustedPosition.x < self.frame.origin.x ) {
+//                contentAnchorPointX = 1;
+            displacementX = theHoverAnnotation.contentLayer.frame.size.width / 2;
         }
-        else if ( theHoverAnnotation.contentLayer.frame.origin.x + theHoverAnnotation.contentLayer.frame.size.width > self.frame.origin.x + self.frame.size.width ) {
-            contentAnchorPointX = 0;
-            displacementX = 20;
+        else if ( theHoverAnnotation.contentLayer.frame.origin.x + adjustedPosition.x + theHoverAnnotation.contentLayer.frame.size.width > self.frame.origin.x + self.frame.size.width ) {
+//                contentAnchorPointX = 0;
+            displacementX = -theHoverAnnotation.contentLayer.frame.size.width / 2;
         }
-        if ( theHoverAnnotation.contentLayer.frame.origin.y < self.frame.origin.y ) {
-            contentAnchorPointY = 1;
-            displacementY = -20;
+        if ( theHoverAnnotation.contentLayer.frame.origin.y + adjustedPosition.x < self.frame.origin.y ) {
+//                contentAnchorPointY = 1;
+            displacementY = theHoverAnnotation.contentLayer.frame.size.height / 2;
         }
-        else if ( theHoverAnnotation.contentLayer.frame.origin.y + theHoverAnnotation.contentLayer.frame.size.height > self.frame.origin.y + self.frame.size.height ) {
-            contentAnchorPointY = 0;
-            displacementY = -20;
+        else if ( theHoverAnnotation.contentLayer.frame.origin.y + adjustedPosition.x + theHoverAnnotation.contentLayer.frame.size.height > self.frame.origin.y + self.frame.size.height ) {
+//                contentAnchorPointY = 0;
+            displacementY = -theHoverAnnotation.contentLayer.frame.size.height / 2;
         }
-        theHoverAnnotation.contentAnchorPoint = CGPointMake(contentAnchorPointX, contentAnchorPointY);
-        theHoverAnnotation.displacement = CGPointMake(displacementX, displacementY);
-        
+//            theHoverAnnotation.contentAnchorPoint = CGPointMake(contentAnchorPointX, contentAnchorPointY);
+        theHoverAnnotation.contentAnchorPoint = CGPointMake(0.5, 0.5);
+//            if ( [(NSString*)[(NSDictionary*)[pointerRegion identifier] objectForKey:@"annotation"] isEqualToString:@"CPTLayerAnnotation"] ) {
+            theHoverAnnotation.displacement = CGPointMake(displacementX, displacementY);
+//            }
+    
         [theGraph addAnnotation:theHoverAnnotation];
     }
 }
