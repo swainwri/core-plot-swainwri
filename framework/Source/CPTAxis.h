@@ -354,6 +354,8 @@ typedef NSMutableArray<__kindof CPTAxis *> CPTMutableAxisArray;
 -(void)addBackgroundLimitBand:(nullable CPTLimitBand *)limitBand;
 -(void)removeBackgroundLimitBand:(nullable CPTLimitBand *)limitBand;
 -(void)removeAllBackgroundLimitBands;
+-(void)updateAxisLabelsTrackingAreas;
+-(void)updateAxisTitleTrackingAreas;
 /// @}
 
 @end

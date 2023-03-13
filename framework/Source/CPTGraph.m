@@ -1136,6 +1136,7 @@ CPTGraphPlotSpaceKey const CPTGraphPlotSpaceNotificationKey       = @"CPTGraphPl
     allowTracking = newAllowTracking;
     
     if ( self.allowTracking ) {
+    
         if ( self.titleAnnotation ) {
 //            CGRect trackingRect = [self convertRect:self.titleAnnotation.contentLayer.frame toLayer:view.layer];
             NSTrackingArea *trackingArea = [[NSTrackingArea alloc] initWithRect:self.titleAnnotation.contentLayer.frame/*trackingRect*/ options:NSTrackingActiveAlways|NSTrackingMouseEnteredAndExited owner:self userInfo:@{ @"message" : @"Title to the graph", @"annotation" : @"CPTLayerAnnotation", @"type": @"title" }];
@@ -1149,6 +1150,13 @@ CPTGraphPlotSpaceKey const CPTGraphPlotSpaceNotificationKey       = @"CPTGraphPl
                 [view addTrackingArea:trackingArea];
             }
         }
+        
+        CPTAxisSet *theAxisSet = self.axisSet;
+        for ( CPTAxis *axis in theAxisSet.axes ) {
+            [axis updateAxisLabelsTrackingAreas];
+            [axis updateAxisTitleTrackingAreas];
+        }
+        
     }
 #else
     
@@ -1159,6 +1167,7 @@ CPTGraphPlotSpaceKey const CPTGraphPlotSpaceNotificationKey       = @"CPTGraphPl
     
     allowTracking = newAllowTracking;
     if ( self.allowTracking ) {
+        
         self.pointerInteraction = [[UIPointerInteraction alloc] initWithDelegate:self];
         self.pointerRegions = [NSMutableArray new];
         UIPointerInteraction *thePointerInteraction = self.pointerInteraction;
@@ -1179,6 +1188,11 @@ CPTGraphPlotSpaceKey const CPTGraphPlotSpaceNotificationKey       = @"CPTGraphPl
                 UIPointerRegion *pointerRegion = [UIPointerRegion regionWithRect:trackingRect identifier:@{ @"message" : @"Layer Annotation", @"annotation" : @"CPTLayerAnnotation", @"type": @"plotAreaAnnotation" }];
                 [self.pointerRegions addObject:pointerRegion];
             }
+        }
+        CPTAxisSet *theAxisSet = self.axisSet;
+        for ( CPTAxis *axis in theAxisSet.axes ) {
+            [axis updateAxisLabelsTrackingAreas];
+            [axis updateAxisTitleTrackingAreas];
         }
     }
     

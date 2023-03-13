@@ -1738,6 +1738,14 @@ NSDecimal CPTNiceLength(NSDecimal length)
     
     CPTGraph *theGraph = thePlotSpace.graph;
     if ( theGraph.allowTracking ) {
+        [self updateAxisLabelsTrackingAreas];
+    }
+}
+
+-(void)updateAxisLabelsTrackingAreas {
+    CPTPlotSpace *thePlotSpace = self.plotSpace;
+    CPTGraph *theGraph = thePlotSpace.graph;
+    if ( theGraph.allowTracking ) {
 #if TARGET_OS_OSX
         CPTGraphHostingView *theGraphHostingView = theGraph.hostingView;
         NSView *view = (NSView*)theGraphHostingView;
@@ -1781,13 +1789,14 @@ NSDecimal CPTNiceLength(NSDecimal length)
         NSIndexSet *axisTrackingAreasIndices = [theGraph.pointerRegions indexesOfObjectsPassingTest:^BOOL(UIPointerRegion *area, NSUInteger __unused idx, BOOL * __unused stop) {
             return [(CPTAxis*)[(NSDictionary*)area.identifier objectForKey:@"axis"] isEqual:self];
         }];
-        NSUInteger index = [axisTrackingAreasIndices lastIndex];
-        while (index != NSNotFound) {
-            [theGraph.pointerRegions removeObjectAtIndex:index];
-            index = [axisTrackingAreasIndices indexLessThanIndex:index];
+        if ( axisTrackingAreasIndices != nil ) {
+            NSUInteger index = [axisTrackingAreasIndices lastIndex];
+            while (index != NSNotFound) {
+                [theGraph.pointerRegions removeObjectAtIndex:index];
+                index = [axisTrackingAreasIndices indexLessThanIndex:index];
+            }
         }
-        
-        for ( CPTAxisLabel *label in newAxisLabels ) {
+        for ( CPTAxisLabel *label in self.axisLabels ) {
             CGPoint origin = [self viewPointForCoordinateValue:label.tickLocation];
             CGRect trackingRect = CGRectMake(origin.x, ((UIView*)theGraphHostingView).frame.size.height - origin.y - ((UIView*)theGraphHostingView).frame.origin.y, label.contentLayer.frame.size.width, label.contentLayer.frame.size.width);
             UIPointerRegion *pointerRegion;
@@ -2071,6 +2080,13 @@ NSDecimal CPTNiceLength(NSDecimal length)
                                   forCoordinate:CPTOrthogonalCoordinate(self.coordinate)
                                     inDirection:direction];
     
+    CPTGraph *theGraph = self.graph;
+    if ( theGraph.allowTracking ) {
+        [self updateAxisTitleTrackingAreas];
+    }
+}
+
+-(void)updateAxisTitleTrackingAreas {
     CPTPlotSpace *thePlotSpace = self.plotSpace;
     CPTGraph *theGraph = thePlotSpace.graph;
     if ( theGraph.allowTracking ) {
@@ -2133,7 +2149,6 @@ NSDecimal CPTNiceLength(NSDecimal length)
 #endif
     }
 }
-
 #pragma mark -
 #pragma mark Layout
 
